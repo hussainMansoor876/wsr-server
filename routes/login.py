@@ -67,7 +67,7 @@ def registerUser():
             'city': data['city'],
             'zip': data['zip'],
             'password': hashed_password,
-            'secretToken': encoded[1],
+            'secretToken': encoded[0],
             'role': 'agent'
         }
         add_data = add.insert_one(user)
